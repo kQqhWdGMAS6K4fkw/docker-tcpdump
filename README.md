@@ -12,7 +12,7 @@ Usage
 
 #### Build
 
-    $ docker build -t kQqhWdGMAS6K4fkw/tcpdump .
+    $ docker build -t kqqhwdgmas6k4fkw/tcpdump .
 
 #### View help and version
 
