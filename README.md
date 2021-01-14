@@ -10,21 +10,25 @@ Volume with pcaps available at `/pcap/`.
 Usage
 -----
 
+#### Build
+
+    $ docker build -t kQqhWdGMAS6K4fkw/tcpdump .
+
 #### View help and version
 
-    $ docker run --rm kQqhWdGMAS6K4fkw/tcpdump --help
+    $ docker run --rm kqqhwdgmas6k4fkw/tcpdump --help
 
 #### Examine the host network
 
-    $ docker run --rm --net=host -v ~/pcap:/pcap kQqhWdGMAS6K4fkw/tcpdump
+    $ docker run --rm --net=host -v ~/pcap:/pcap kqqhwdgmas6k4fkw/tcpdump
 
 #### Examine the TCP traffic on the host network with Wireshark
 
-    $ docker run --rm --net=host kQqhWdGMAS6K4fkw/tcpdump -i any -w - | wireshark -k -i -
+    $ docker run --rm --net=host kqqhwdgmas6k4fkw/tcpdump -i any -w - | wireshark -k -i -
 
 #### Examine the traffic of Docker container `foo` with Wireshark
 
-    $ docker run --rm --net=container:foo kQqhWdGMAS6K4fkw/tcpdump -i any --immediate-mode -w - | wireshark -k -i -
+    $ docker run --rm --net=container:foo kqqhwdgmas6k4fkw/tcpdump -i any --immediate-mode -w - | wireshark -k -i -
 
 
 ## Credits
